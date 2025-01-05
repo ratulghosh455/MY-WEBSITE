@@ -18,6 +18,38 @@ h1 {
     align-items: center;     /* Center h1 vertically */
 }
 
+/* Basic styles for the button container */
+.button-container {
+    text-align: center; /* Center buttons horizontally */
+    margin-top: 50px;   /* Add some space from the top */
+}
+
+/* Styling for the buttons (anchor tags) */
+.btn {
+    display: inline-block; /* Make the buttons line up side by side */
+    padding: 15px 30px;    /* Adjust padding for button size */
+    margin: 10px;          /* Space between buttons */
+    background-color: #007bff; /* Background color */
+    color: white;          /* Text color */
+    text-decoration: none; /* Remove the underline from links */
+    font-size: 18px;       /* Font size */
+    font-weight: bold;     /* Make the font bold */
+    border-radius: 5px;    /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: scale(1.05);      /* Slightly enlarge the button on hover */
+}
+
+/* Focus state for accessibility */
+.btn:focus {
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a blue glow on focus */
+}
+
 /* For smaller screens (phones) */
 @media (max-width: 768px) {
     h1 {
@@ -26,5 +58,17 @@ h1 {
 
     .background_img {
         height: 400px; /* Adjust height of the background for smaller screens */
+    }
+
+    .button-container {
+        margin-top: 20px; /* Reduce space at the top on smaller screens */
+    }
+
+    .btn {
+        display: block;   /* Stack the buttons vertically on mobile */
+        width: 80%;        /* Make the buttons take up most of the width */
+        padding: 12px 20px;/* Reduce padding to fit better on small screens */
+        font-size: 16px;   /* Reduce font size for smaller screens */
+        margin: 10px auto; /* Center buttons with auto margin */
     }
 }
