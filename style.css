@@ -1,57 +1,30 @@
-@media (min-width: 1300px) {
+/* Base styles (for larger screens) */
 h1 {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-weight: bolder;
     font-size: 200px;
-    margin: 0px 0px;
+    margin: 0;
 }
 
 .background_img {
     background-image: url('Website_bg.jpg');
     background-size: cover;
-    height: 500px;
+    height: 600px;
     width: 100%;
+    display: flex;
+    justify-content: center; /* Center h1 horizontally */
+    align-items: center;     /* Center h1 vertically */
 }
 
-body {
-    margin: 0px 0px;
-}
-
-#AboutMe {
-    display: inline-block;
-    border: 5px solid black;
-    margin-left: 20px;
-    background-color: aqua;
-}
-}
-
-@media (max-width: 1300px) {
+/* For smaller screens (phones) */
+@media (max-width: 768px) {
     h1 {
-        text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        font-weight: bolder;
-        font-size: 100px;
-        margin: 0px 0px;
+        font-size: 80px; /* Reduce font size for small screens */
     }
-    
+
     .background_img {
-        background-image: url('Website_bg.jpg');
-        background-size: cover;
-        height: 500px;
-        width: 100%;
+        height: 400px; /* Adjust height of the background for smaller screens */
     }
-    
-    body {
-        margin: 0px 0px;
-    }
-    
-    #AboutMe {
-        display: inline-block;
-        border: 5px solid black;
-        margin-left: 20px;
-        background-color: aqua;
-    }
-    }
+}
