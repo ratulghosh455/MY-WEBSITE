@@ -8,7 +8,7 @@ h1 {
 }
 
 .background_img {
-    background-image: url('https://www.vecteezy.com/photo/22776516-computer-program-code-on-a-black-background-close-up-high-quality-photo');
+    background-image: url("Website_bg.jpg");
     background-size: cover;
     height: 500px;
     width: 100%;
