@@ -8,7 +8,7 @@ h1 {
 }
 
 .background_img {
-    background-image: url('Website_bg.JPG');
+    background-image: url('/Website_bg.JPG');
     background-size: cover;
     height: 500px;
     width: 100%;
