@@ -21,7 +21,7 @@ h1 {
 /* Basic styles for the button container */
 .button-container {
     text-align: center; /* Center buttons horizontally */
-    margin-top: 50px;   /* Add some space from the top */
+    margin-top: 5px;   /* Add some space from the top */
 }
 
 /* Styling for the buttons (anchor tags) */
@@ -32,7 +32,7 @@ h1 {
     background-color: #007bff; /* Background color */
     color: white;          /* Text color */
     text-decoration: none; /* Remove the underline from links */
-    font-size: 18px;       /* Font size */
+    font-size: 50px;       /* Font size */
     font-weight: bold;     /* Make the font bold */
     border-radius: 5px;    /* Rounded corners */
     transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
@@ -46,6 +46,45 @@ h1 {
 
 /* Focus state for accessibility */
 .btn:focus {
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a blue glow on focus */
+}
+
+.centered-image {
+    display: block;      /* Make the image a block-level element */
+    margin-left: auto;   /* Automatically set left margin */
+    margin-right: auto;  /* Automatically set right margin */
+    width: 500px;          /* Optional: Adjust the image width */
+    height: 430px;
+    border-radius: 50%;
+}
+
+.ItsMe {
+    background-color: darkslategrey;
+}
+
+.btn2 {
+    display: inline-block; /* Make the buttons line up side by side */
+    padding: 15px 30px;    /* Adjust padding for button size */
+    margin: 10px;          /* Space between buttons */
+    background-color:#4e642a; /* Background color */
+    color: white;          /* Text color */
+    text-decoration: none; /* Remove the underline from links */
+    font-size: 50px;       /* Font size */
+    font-weight: bold;     /* Make the font bold */
+    border-radius: 5px;    /* Rounded corners */
+    transition: background-color 3s, transform 3s; /* Smooth transition */
+    text-align: center;
+}
+
+/* Hover effect for buttons */
+.btn2:hover {
+    background-color:#25340c; /* Darker background on hover */
+    transform: scale(1.05);      /* Slightly enlarge the button on hover */
+}
+
+/* Focus state for accessibility */
+.btn2:focus {
     outline: none; /* Remove the default outline */
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a blue glow on focus */
 }
@@ -64,7 +103,7 @@ h1 {
         margin-top: 20px; /* Reduce space at the top on smaller screens */
     }
 
-    .btn {
+    .btn .btn2 {
         display: block;   /* Stack the buttons vertically on mobile */
         width: 80%;        /* Make the buttons take up most of the width */
         padding: 12px 20px;/* Reduce padding to fit better on small screens */
